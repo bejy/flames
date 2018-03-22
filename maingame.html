@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title> HomePage </title>
+  		<link rel="stylesheet" href="css/bootstrap.min.css">
+  		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+  		<script type="text/javascript" src = "js/jquery-slim.min.js"></script>
+  		<script type="text/javascript" src = "js/popper.min.js"></script>
+  		<script type="text/javascript" src = "js/bootstrap.js"></script>
+  		<script type="text/javascript" src = "js/flames.js"></script>
+		<script type="text/javascript" src = "js/image.js"></script>
+	</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+<a href ="index.html"><i class ="fa fa-arrow-left" style = "font-size:50px; color:black" ></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   		<span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	<ul class="navbar-nav mr-auto">
+		<li class="nav-item dropdown">
+			<a href ="index.html"><i class ="fa fa-youtube" style = "font-size:50px; color:black" ></i></a>
+			<a href ="index.html"><i class ="fa fa-twitter" style = "font-size:50px; color:black" ></i></a>
+			<a href ="index.html"><i class ="fa fa-facebook" style = "font-size:50px; color:black" ></i></a>
+		</li>
+	</ul>
+  </div>
+</nav>
+<br><br>
+<center>
+<div class="container">
+	<div class = "col-10">
+		<div align='center' style="color: red;"><h1>FLAMES</h1></div>
+		<div class='love1'>
+			<form name=first>
+				<div class='love'>
+					<div class="form-group">
+					<br>
+						<b>Your Name</b><br>
+							<input value='' name=name onkeyup=checnum(this) type=text class='form-control' id='yname' >
+						<br> <b>Lover's Name </b><br>
+							<input value='' name=name1 onkeyup=checnum(this) type=text class='form-control' id='pname'>
+					</div>
+						<input class="btn btn-outline-danger btn-lg" name=calculate type=button value=FLAMES onclick=calc() >
+						<input class="btn btn-outline-danger btn-lg" type=reset value=Reset onclick='clear_all()' class='buttonMini'><br><br>
+						<div name=n1 id=nam1></div>
+						<div style='font-weight:bold;' id='msg'></div><br>
+					<div id='tablid' class='clearfix'>
+						<div class='group' align='center'>
+							<div class='love_result'>
+								<span name=n1 id=nam1></span>
+								<img name=pic1 id=pic1 width=0 height=0>
+							</div>
+						</div>
+					</div>
+			</form>
+				</div>
+		</div>
+		</div>
+	<div class = "col-10"><br>
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="img/Chrysanthemum.jpg" alt="First slide" height = "300">
+			<div class="card-body">
+				
+			</div>
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="img/Hydrangeas.jpg" alt="Second slide" height = "300">
+		  <div class="card-body">
+				
+			</div>
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="img/Tulips.jpg" alt="Third slide" height = "300">
+		  <div class="card-body">
+			
+			</div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
